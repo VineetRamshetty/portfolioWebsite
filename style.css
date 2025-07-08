@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  background-color: #191D32;
+  line-height: 1.6;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #282F44;
+  z-index: 1000;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+}
+.titleName h1{
+  font-size: 1.5rem;
+  color: #D4A373;
+}
+nav .sections{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav .sections a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav .sections a:hover{
+  color: #6D3B47;
+}
+.section{
+  padding-top: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191D32;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+}
+.left{
+  flex: 1;
+  padding-right: 20px;
+}
+.right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dpFrame{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #6D3B47;
+  background-color: #453A49;
+}
+.dp{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right>img{
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #282F44;
+  padding: 10px;
+  border: 3px solid #6D3B47;
+  object-fit: contain;
+}
+h1, h2{
+  color: #FAEDCD;
+  margin-bottom: 10px;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+.highlight{
+  color: #6D3B47;
+}
+.subTitle{
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.typedText{
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  min-height: 30px;
+  color: #D4A373;
+}
+p{
+  margin-bottom: 0.8rem;
+}
+a{
+  color: #D4A373;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+a:hover{
+  color: #FAEDCD;
+  text-decoration: underline;
+}
+.downloadBtn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 25px;
+  background: #6D3B47;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.downloadBtn:hover{
+  background: #453A49;
+  transform: scale(1.05);
+}
+.divider hr{
+  border: none;
+  height: 4px;
+  background-color: #6D3B47;
+  width: 60%;
+  margin: 2rem auto;
+  opacity: 0.9;
+  border-radius: 2px;
+}
+footer{
+  text-align: center;
+  padding: 1rem;
+  background: #282F44;
+  font-size: 0.9rem;
+}
